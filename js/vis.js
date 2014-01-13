@@ -300,20 +300,20 @@ function getText(d, type) {
 
 // convert ratio number to an actual suggestion
 function getRatioSuggestion(ratio) {
-	if (ratio < 20) {
-		return "买房合适些";
+	if (ratio < 30) {
+		return "房价泡沫略小";
 	}
-	else if (ratio > 40) {
-		return "绝对要租房，买不起啊";
+	else if (ratio > 50) {
+		return "泡沫过大";
 	}
-	else if (ratio < 25) {
-		return "为了舒服些，还是买房吧";
+	else if (ratio < 35) {
+		return "为了舒服些，咬牙买房";
 	}
-	else if (ratio >= 25 && ratio < 30) {
-		return "租房买房差不多,<br/>一咬牙买了吧";
+	else if (ratio >= 35 && ratio < 40) {
+		return "买房有风险";
 	}
-	else if (ratio >= 30) {
-		return "还是租吧";
+	else if (ratio >= 40) {
+		return "泡沫较大，再忍忍";
 	}
 	else {
 		return "";
